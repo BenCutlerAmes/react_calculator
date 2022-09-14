@@ -75,7 +75,7 @@ describe("Calculator", () => {
     cy.get('.display').should('contain', '9.6')
   })
 
-  it('should display decimal numbers',()=>{
+  it('should not divide by 0',()=>{
     cy.get('#number9').click();
     cy.get('#operator-divide').click();
     cy.get('#number0').click();
